@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wajdyazzam.com/static/css/main.ba8f2c61.css",
-    "main.js": "/wajdyazzam.com/static/js/main.0550a757.js",
+    "main.js": "/wajdyazzam.com/static/js/main.3993eab3.js",
     "static/media/fa-solid-900.ttf": "/wajdyazzam.com/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/wajdyazzam.com/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/fa-solid-900.woff2": "/wajdyazzam.com/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
@@ -12,10 +12,10 @@
     "static/media/fa-v4compatibility.woff2": "/wajdyazzam.com/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/wajdyazzam.com/index.html",
     "main.ba8f2c61.css.map": "/wajdyazzam.com/static/css/main.ba8f2c61.css.map",
-    "main.0550a757.js.map": "/wajdyazzam.com/static/js/main.0550a757.js.map"
+    "main.3993eab3.js.map": "/wajdyazzam.com/static/js/main.3993eab3.js.map"
   },
   "entrypoints": [
     "static/css/main.ba8f2c61.css",
-    "static/js/main.0550a757.js"
+    "static/js/main.3993eab3.js"
   ]
 }
