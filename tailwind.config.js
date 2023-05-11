@@ -9,6 +9,7 @@ module.exports = {
       mono: ["ui-monospace", "SFMono-Regular"],
       display: ["Oswald"],
       typeFont: ['"Space Mono"'],
+      body: ['"Open Sans"'],
     },
     container: {
       center: true,
@@ -28,6 +29,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        lightBlue: "#ccd6f6",
+        bodyFontColor: "#0a192f",
         primaryBG: "#F3F3F7",
         LightBG: {
           DEFAULT: "#E3E3EE",
@@ -46,6 +49,12 @@ module.exports = {
         },
         BorderColor: "#3B45FF",
         borderColorOnDarkBG: "#303156",
+      },
+      gridTemplateRows: {
+        "auto/1fr": "auto 1fr",
+      },
+      gridTemplateColumns: {
+        "auto/1fr/1fr": "auto 1fr 1fr",
       },
     },
   },

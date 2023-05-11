@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./index.scss";
 
 import LandingPage from "./layout/Pages/LandingPage";
 import Contact from "./layout/Pages/Contact.jsx";
@@ -16,7 +16,6 @@ function App() {
     <>
       <Router>
         <div className="h-screen">
-          <Header />
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/contact" element={<Contact />} />

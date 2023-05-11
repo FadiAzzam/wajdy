@@ -4,39 +4,37 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="px-2 sm:px-4 py-2.5 w-full bg-primaryBG">
-        <div className="container bg-white rounded-lg my-8">
-          <ul className="flex gap-5 justify-center">
-            <li>
+      <footer className="py-4 md:py-8 container ">
+        <nav className="p-3 w-full flex-wrap justify-center md:flex-nowrap flex items-center md:items-baseline mx-auto rounded-full drop-shadow-2xl bg-gray-700/20 backdrop-blur ">
+          <ul className="text-base flex justify-between items-center  ">
+            <li className="p-3 ">
               <NavLink
-                to={"/"}
-                className="md:p-4 py-2 font-typeFont  block hover:text-blue-200"
+                className="hover:text-blue-500 flex justify-center"
+                to="/"
               >
-                Wajdyazzam.com
+                wajdiazzam.com
               </NavLink>
             </li>
-            <li>
+
+            <li className="p-3 ">
               <NavLink
-                to={"/contact"}
-                className="md:p-4 py-2 block font-typeFont hover:text-blue-200"
+                className="hover:text-blue-500 flex justify-center"
+                to="/contact"
               >
                 Contact
               </NavLink>
             </li>
-          </ul>
-          <hr />
-          <ul className="flex gap-5 justify-center pt-3">
-            <li className="font-light">
-              Follow me on LinkedIn and Behance for more design inspiration and
-              updates.
+
+            <li className="p-3 ">
+              <NavLink
+                className="hover:text-blue-500 flex justify-center"
+                to="/impressum"
+              >
+                Imprint
+              </NavLink>
             </li>
           </ul>
-          <ul className="flex gap-5 justify-center pb-3">
-            <li className="font-light">
-              Copyright © 2023 Wajdy Azzam. All rights reserved.
-            </li>
-          </ul>
-        </div>
+        </nav>
       </footer>
     </>
   );
