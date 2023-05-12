@@ -8,12 +8,11 @@ import Footer from "./layout/Sections/Footer";
 
 import NoMatch from "./components/NoMatch";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import { Router, Route, Routes, HashRouter } from "react-router-dom";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <div className="h-screen">
           <Routes>
             <Route path="/" element={<LandingPage />} />
@@ -23,7 +22,7 @@ function App() {
           </Routes>
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
     </>
   );
 }
