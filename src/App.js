@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.scss";
 
 import LandingPage from "./layout/Pages/LandingPage";
 import Contact from "./layout/Pages/Contact.jsx";

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.scss";
+import "../src/index.scss";
 import App from "./App";
 
 import "@fortawesome/fontawesome-free/css/all.css";
