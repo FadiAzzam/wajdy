@@ -17,7 +17,7 @@ const imgs = [
 const blogPosts = [
   {
     id: 1,
-    title: "Die Bedeutung von Webdesign für die User Experience",
+    title: "",
     category: "webdesign",
     categoryIcon: <MdOutlineDesignServices />,
     date: "2023-03-26",
@@ -83,7 +83,7 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "UI-Design: Tipps für eine benutzerfreundliche Benutzeroberfläche",
+    title: "",
     category: "ui",
     categoryIcon: <FaPager />,
     date: "2022-02-01",
@@ -143,7 +143,7 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "UI-Design vs. UX-Design: Was ist der Unterschied?",
+    title: "",
     category: "ux",
     categoryIcon: <FaPager />,
 
@@ -213,8 +213,7 @@ const blogPosts = [
   },
   {
     id: 4,
-    title:
-      "User Research: Wie man die Bedürfnisse und Ziele der Benutzer versteht",
+    title: "",
     category: "ux",
     categoryIcon: <GrVulnerability />,
     date: "2022-03-01",
@@ -269,8 +268,7 @@ const blogPosts = [
   },
   {
     id: 5,
-    title:
-      "Design Thinking: Wie man UX-Design durch kreatives Denken verbessert",
+    title: "",
     category: "ux",
     categoryIcon: <GrVulnerability />,
     date: "2022-03-01",
@@ -339,9 +337,8 @@ const blogPosts = [
   },
   {
     id: 6,
-    title:
-      "Mobile First Design: Wie Sie Ihre Website für mobile Geräte optimieren",
-    category: "Responsive Design",
+    title: "",
+    category: "ui",
     categoryIcon: <AiOutlineFullscreen />,
     date: "2022-03-01",
     author: "Wajdi Azzam",

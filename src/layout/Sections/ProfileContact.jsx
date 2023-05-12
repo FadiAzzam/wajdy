@@ -3,7 +3,7 @@ import { socialLinks } from "../../constants";
 
 const ProfileContact = () => {
   return (
-    <div className="drop-shadow-2xl backdrop-blur  p-3 bg-gray-700/20 rounded-lg h-full basis-full space-y-3 text-justify">
+    <div className="drop-shadow-2xl backdrop-blur  p-6 bg-gray-700/20 rounded-lg h-full space-y-3 text-justify">
       <p className="">
         Want to get in touch? You can reach me at [Email Address] or [Phone
         Number]. Connect with me on LinkedIn or Behance to stay up-to-date on my

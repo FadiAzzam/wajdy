@@ -24,15 +24,6 @@ const Footer = () => {
                 Contact
               </NavLink>
             </li>
-
-            <li className="p-3 ">
-              <NavLink
-                className="hover:text-blue-500 flex justify-center"
-                to="/impressum"
-              >
-                Imprint
-              </NavLink>
-            </li>
           </ul>
         </nav>
       </footer>

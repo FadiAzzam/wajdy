@@ -10,7 +10,7 @@ import { GoLocation } from "react-icons/go";
 
 const ProfileDescription = () => {
   return (
-    <div className="md:sticky top-32 drop-shadow-2xl backdrop-blur  p-3 bg-gray-700/20 rounded-lg h-full basis-full ">
+    <div className="drop-shadow-2xl backdrop-blur p-6  bg-gray-700/20 rounded-lg ">
       <h3 className="text-lg">Profile</h3>
       <div>
         {workExperienceContent.map((exp, i) => {
@@ -21,9 +21,9 @@ const ProfileDescription = () => {
                   <MdWork className="text-xl" />
                 </div>
                 <div>
-                  <p className="truncate text-xs leading-5 text-gray-500 whitespace-break-spaces">
+                  <p className="truncate  leading-5  whitespace-break-spaces">
                     {exp.title} bei{" "}
-                    <strong className="font-semibold text-gray-400">
+                    <strong className="font-bold text-gray-400">
                       {exp.company}
                     </strong>
                   </p>
@@ -43,9 +43,9 @@ const ProfileDescription = () => {
                   <MdSchool className="text-xl" />
                 </div>
                 <div>
-                  <p className="truncate text-xs leading-5 text-gray-500 whitespace-break-spaces">
+                  <p className="truncate leading-5  whitespace-break-spaces">
                     Studied here:{" "}
-                    <strong className="font-semibold text-gray-400">
+                    <strong className="font-bold text-gray-400">
                       {edu.company}
                     </strong>
                   </p>
@@ -63,9 +63,9 @@ const ProfileDescription = () => {
               <GoLocation className="text-xl" />
             </div>
             <div>
-              <p className="truncate text-xs leading-5 text-gray-500 whitespace-break-spaces">
+              <p className="truncate  leading-5  whitespace-break-spaces">
                 lives in
-                <strong className="font-semibold text-gray-400">
+                <strong className="font-bold text-gray-400">
                   {" "}
                   Sweida, Syria
                 </strong>
@@ -75,28 +75,7 @@ const ProfileDescription = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-        {socialLinks.map((link, i) => {
-          return (
-            <div key={i} className="flex justify-between py-2">
-              <div className="flex gap-2">
-                {/* <div className="text-xl">{link.icon}</div> */}
-                <div>
-                  <a
-                    className="truncate text-xl leading-5 text-blue-200 hover:text-blue-200 whitespace-break-spaces block"
-                    target="blank"
-                    href={link.link}
-                  >
-                    {link.icon}
-                  </a>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      <div className="space-y-3 text-justify">
+      <div className="space-y-3 py-3 text-justify">
         <p>
           Welcome to my portfolio website! My name is Wajdi Azzam, and I'm a
           graphic and web designer based in Syria. I specialize in creating
@@ -136,6 +115,27 @@ const ProfileDescription = () => {
           Thank you for visiting my portfolio website, and I look forward to
           hearing from you!
         </p>
+      </div>
+
+      <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+        {socialLinks.map((link, i) => {
+          return (
+            <div key={i} className="flex justify-between py-2">
+              <div className="flex gap-2">
+                {/* <div className="text-xl">{link.icon}</div> */}
+                <div>
+                  <a
+                    className="truncate text-xl leading-5 text-blue-200 hover:text-indigo-400 whitespace-break-spaces block"
+                    target="blank"
+                    href={link.link}
+                  >
+                    {link.icon}
+                  </a>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

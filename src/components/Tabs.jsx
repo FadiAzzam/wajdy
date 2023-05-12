@@ -7,7 +7,7 @@ export default function Tabs({ data }) {
     <li
       key={item.id}
       onClick={() => setVisibleTab(item.id)}
-      className={`cursor-pointer p-3 hover:bg-gray-700/20 ${
+      className={`cursor-pointer p-3 hover:bg-gray-700/20 font-semibold flex justify-center items-center text-lg ${
         visibleTab === item.id
           ? "border-b-2 border-indigo-400 text-indigo-400  "
           : ""
@@ -25,7 +25,9 @@ export default function Tabs({ data }) {
 
   return (
     <div className="">
-      <ul className="flex">{listTitles}</ul>
+      <ul className="grid grid-flow-col auto-cols-fr items-center py-6">
+        {listTitles}
+      </ul>
       <div className="tab-content">{listContent}</div>
     </div>
   );
