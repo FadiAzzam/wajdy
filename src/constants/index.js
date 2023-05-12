@@ -28,7 +28,6 @@ import {
   AiOutlineFormatPainter,
   AiOutlineApi,
   AiOutlineBehanceSquare,
-  AiOutlinePinter,
   AiOutlineDribbble,
 } from "react-icons/ai";
 
@@ -294,89 +293,33 @@ export const skillsContent = [
 export const skillsHierarchyContent = [
   [
     {
-      label: "Frontend-Entwicklung",
-      icon: <AiOutlineCode size={"2rem "} />,
+      label: "Frontend Development",
+      icon: <AiOutlineCode />,
       children: [
         {
-          icon: <FaReact />,
-          name: "React.js",
-        },
-        {
-          icon: <IoLogoJavascript />,
-          name: "JavaScript",
-        },
-        {
-          icon: <DiJqueryLogo />,
-          name: "jQuery",
-        },
-        {
-          icon: <AiOutlineHtml5 />,
           name: "HTML5",
+          icon: <AiOutlineHtml5 />,
         },
         {
-          icon: <DiCss3 />,
           name: "CSS3",
-          children: [{ icon: <FaSass />, name: "Sass" }],
+          icon: <DiCss3 />,
         },
         {
-          icon: <FaBootstrap />,
-          name: "Bootstrap 5",
+          name: "WordPress",
+          icon: <FaWordpress />,
         },
         {
-          icon: <SiTailwindcss />,
-          name: "Tailwind CSS",
-        },
-        {
-          icon: <AiOutlineFormatPainter />,
-          name: "Styled Components",
-        },
-        {
-          icon: <SiSemanticuireact />,
-          name: "Semantic UI",
-        },
-        {
-          icon: <SiFontawesome />,
-          name: "Font Awesome 6",
+          name: "Elementor",
+          icon: <FaElementor />,
         },
       ],
     },
   ],
+
   [
     {
-      label: "Backend-Entwicklung",
-      icon: <FaCogs size={"2rem "} />,
-
-      children: [
-        {
-          icon: <SiDjango />,
-          name: "Django",
-        },
-        {
-          icon: <SiPython />,
-          name: "Python",
-        },
-        {
-          icon: <DiNodejsSmall />,
-          name: "Node.js",
-          children: [
-            {
-              icon: <FaJs />,
-              name: "Express.js",
-            },
-          ],
-        },
-
-        {
-          icon: <AiOutlineApi />,
-          name: "RESTful API",
-        },
-      ],
-    },
-  ],
-  [
-    {
-      label: "Grafikdesign und Layout",
-      icon: <FaPalette size={"2rem "} />,
+      label: "Graphic & UI design",
+      icon: <AiOutlineFormatPainter />,
       children: [
         {
           name: "Adobe InDesign",
@@ -390,82 +333,8 @@ export const skillsHierarchyContent = [
           name: "Affinity Phone",
           icon: <SiAffinityphoto />,
         },
-        {
-          name: "UI/UX-Design",
-          icon: <SiMaterialdesignicons />,
-          children: [
-            { icon: <FaFigma />, name: "Figma" },
-            { icon: <SiAdobexd />, name: "Adobe XD" },
-
-            {
-              name: "Wireframing & Prototyping",
-              icon: <TfiLayoutMediaLeft />,
-
-              children: [{ icon: <FiFramer />, name: "Framer Motion" }],
-            },
-          ],
-        },
-      ],
-    },
-  ],
-  [
-    {
-      label: "Versionskontrolle und Entwicklungstools",
-      icon: <FaTerminal size={"2rem "} />,
-
-      children: [
-        {
-          icon: <AiOutlineGithub />,
-          name: "Git + GitHub",
-        },
-        {
-          icon: <FaTerminal />,
-          name: "Bash",
-        },
-        {
-          icon: <VscDebugLineByLine />,
-          name: "Chrome Dev Tools",
-        },
-        {
-          icon: <FaDocker />,
-          name: "Docker",
-        },
-        {
-          icon: <FaNpm />,
-          name: "Npm",
-        },
-        {
-          icon: <SiNotion />,
-          name: "Notion",
-        },
-      ],
-    },
-  ],
-  [
-    {
-      label: "Content-Management-Systeme (CMS)",
-      icon: <FiLayout size={"2rem "} />,
-
-      children: [
-        {
-          name: "WordPress",
-          icon: <FaWordpress />,
-          children: [{ name: "Elementor", icon: <FaElementor /> }],
-        },
-      ],
-    },
-  ],
-
-  [
-    {
-      label: "Cloud-Services und Plattformen",
-      icon: <TbCloudComputing size={"2rem "} />,
-
-      children: [
-        {
-          name: "Firebase",
-          icon: <SiFirebase />,
-        },
+        { icon: <FaFigma />, name: "Figma" },
+        { icon: <SiAdobexd />, name: "Adobe XD" },
       ],
     },
   ],

@@ -12,7 +12,7 @@ const ProfileArticles = ({ post }) => {
       {blogPosts.map((post) => {
         return (
           <div
-            className="drop-shadow-2xl backdrop-blur grid grid-rows-auto/1fr grid-cols-auto/1fr/1fr gap-4  word-break-word  p-3 bg-gray-700/20 rounded-lg"
+            className="drop-shadow-2xl backdrop-blur grid grid-rows-auto/1fr grid-cols-50px/1fr/1fr/50px gap-4  word-break-word  p-3 bg-gray-700/20 rounded-lg"
             key={Math.random() * post.id}
           >
             <div className=" row-span-2">

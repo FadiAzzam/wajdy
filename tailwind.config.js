@@ -23,7 +23,7 @@ module.exports = {
         DEFAULT: "1rem",
         sm: "2rem",
         lg: "4rem",
-        xl: "0rem",
+        xl: "14rem",
         "2xl": "0rem",
       },
     },
@@ -55,6 +55,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         "auto/1fr/1fr": "auto 1fr 1fr",
+        "50px/1fr/1fr/50px": "50px 1fr 1fr 50px",
       },
     },
   },
