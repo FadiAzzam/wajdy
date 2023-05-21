@@ -28,6 +28,9 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage: {
+        "hero-cover": "url('/src/assets/imgs/Logo cover pic copy.png')",
+      },
       colors: {
         lightBlue: "#ccd6f6",
         bodyFontColor: "#0a192f",

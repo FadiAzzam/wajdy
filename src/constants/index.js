@@ -79,7 +79,7 @@ export const AboutContent = [
         in Sweida, Syrien und seit 2016 lebe ich in Deutschland. Im September
         2021 habe ich meinen Bachelor in Medieninformatik an der
         <a
-          className="text-indigo-400 hover:text-blue-300 font-bold"
+          className="text-blue-400 hover:text-blue-300 font-bold"
           target="_blank"
           rel="noreferrer"
           href="https://www.ba-dresden.de/"
@@ -90,7 +90,7 @@ export const AboutContent = [
         erfolgreich abgeschlossen und arbeite derzeit als Wissenschaftlicher
         Mitarbeiter bei
         <a
-          className="text-indigo-400 hover:text-blue-300 font-bold"
+          className="text-blue-400 hover:text-blue-300 font-bold"
           target="_blank"
           rel="noreferrer"
           href="https://infai.org/"

@@ -8,7 +8,7 @@ const ProfileSkills = () => {
         return exp.map((skill, i) => {
           return (
             <div key={i} className="flex flex-col gap-3 p-3">
-              <div className="flex gap-2 items-center text-indigo-400 ">
+              <div className="flex gap-2 items-center text-blue-400 ">
                 <div className="text-2xl">{skill.icon}</div>
                 <div>
                   <p className="truncate leading-5 whitespace-break-spaces">

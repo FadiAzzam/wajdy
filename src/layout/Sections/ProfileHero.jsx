@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 const ProfileHero = () => {
   return (
     <div>
-      <div className="w-full bg-indigo-400 h-72 flex justify-center items-center">
-        <h1 className="text-3xl md:text-5xl font-extrabold leading-none tracking-tight  uppercase">
+      <div className="w-full bg-white bg-hero-cover bg-contain bg-no-repeat bg-center bg-origin-border h-72 flex justify-center items-center">
+        {/* <h1 className="text-3xl md:text-5xl font-extrabold leading-none tracking-tight  uppercase">
           Product & UI designer
-        </h1>
+        </h1> */}
       </div>
       <div className="container">
         <div className="flex items-center gap-3 flex-col md:flex-row">
@@ -19,7 +19,7 @@ const ProfileHero = () => {
             <div className="absolute md:bottom-8 bottom-0">
               <img
                 className="w-36 h-36 rounded-full object-cover object-center border-4 border-lightBlue bg-bodyFontColor"
-                src={require("../../assets/imgs/wajdy.jpeg")}
+                src={require("../../assets/imgs/DSC_2349.jpg")}
                 alt=""
               />
             </div>
@@ -48,7 +48,7 @@ const ProfileHero = () => {
             </div>
 
             <Link
-              className="rounded-sm  text-white bg-indigo-400 hover:border-indigo-400 border border-transparent text-sm px-4 py-2.5 text-center flex items-center gap-2"
+              className="rounded-sm  text-white bg-blue-400 hover:bg-blue-500 border border-transparent text-sm px-4 py-2.5 text-center flex self-start md:self-auto items-center gap-2"
               to="/contact"
             >
               Hire me

@@ -3,13 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FiArrowUpRight } from "react-icons/fi";
 import blogPosts from "../../constants/blogPosts";
+import { images } from "../../constants/blogPosts";
 
 const ProfileArticles = ({ post }) => {
   let navigate = useNavigate();
 
   return (
     <div className="flex flex-col gap-6 flex-auto">
-      {blogPosts.map((post) => {
+      {images.map((img) => (
+        <img key={img.key} src={img.src} alt={img.key} />
+      ))}
+      {/* {blogPosts.map((post) => {
         return (
           <div
             className="drop-shadow-2xl backdrop-blur p-3 bg-gray-700/20 rounded-lg"
@@ -19,7 +23,7 @@ const ProfileArticles = ({ post }) => {
               <div className="flex items-center justify-center gap-3">
                 <img
                   className="w-14 h-14 rounded-full object-cover object-center  border-gray-700 border"
-                  src={require("../../assets/imgs/wajdy.jpeg")}
+                  src={require("../../assets/imgs/DSC_2349.jpg")}
                   alt=""
                 />
                 <div className="flex flex-col gap-1 items-start">
@@ -33,7 +37,7 @@ const ProfileArticles = ({ post }) => {
 
               <div>
                 <span
-                  className="rounded-full border border-indigo-400 px-5 text-indigo-400 text-xs py-1 text-center cursor-pointer hover:border-r-8 transition-all "
+                  className="rounded-full border border-blue-400 px-5 text-blue-400 text-xs py-1 text-center cursor-pointer hover:border-r-8 transition-all "
                   // onClick={() => navigate(`/blog/category/${post.category}`)}
                 >
                   {post.category}
@@ -50,58 +54,28 @@ const ProfileArticles = ({ post }) => {
                 </div>
               )}
               <div className="flex flex-wrap md:-m-2">
-                <div className="flex w-1/2 flex-wrap">
-                  <div className="w-full p-1 md:p-2">
-                    <img
-                      className="block h-full w-full rounded-lg object-cover object-center"
-                      src={post.image}
-                      alt={post.title}
-                    />
-                  </div>
-                </div>
-
-                <div className="flex w-1/2 flex-wrap">
-                  <div className="w-full p-1 md:p-2">
-                    <img
-                      className="block h-full w-full rounded-lg object-cover object-center"
-                      src={post.image}
-                      alt={post.title}
-                    />
-                  </div>
-                </div>
-                <div className="flex w-1/2 flex-wrap">
-                  <div className="w-full p-1 md:p-2">
-                    <img
-                      className="block h-full w-full rounded-lg object-cover object-center"
-                      src={post.image}
-                      alt={post.title}
-                    />
-                  </div>
-                </div>
-                <div className="flex w-1/2 flex-wrap">
-                  <div className="w-full p-1 md:p-2">
-                    <img
-                      className="block h-full w-full rounded-lg object-cover object-center"
-                      src={post.image}
-                      alt={post.title}
-                    />
-                  </div>
+                <div className="w-full p-1 md:p-2">
+                  <img
+                    className="block h-full w-full rounded-lg object-cover object-center"
+                    src={post.image}
+                    alt={post.title}
+                  />
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <span
-                  className="rounded-full text-indigo-400 text-sm py-1 px-2 text-center flex gap-1 items-center cursor-pointer "
+                  className="rounded-full text-blue-400 text-sm py-1 px-2 text-center flex gap-1 items-center cursor-pointer "
                   // onClick={() => navigate(`/blog/${post.slug}`)}
                 >
                   <span>Show more</span>
                   <FiArrowUpRight className="" />
                 </span>
-              </div>
+              </div> 
             </div>
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 };

@@ -125,7 +125,7 @@ const ProfileDescription = () => {
                 {/* <div className="text-xl">{link.icon}</div> */}
                 <div>
                   <a
-                    className="truncate text-xl leading-5 text-blue-200 hover:text-indigo-400 whitespace-break-spaces block"
+                    className="truncate text-xl leading-5 text-blue-200 hover:text-blue-400 whitespace-break-spaces block"
                     target="blank"
                     href={link.link}
                   >

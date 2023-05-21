@@ -9,7 +9,7 @@ export default function Tabs({ data }) {
       onClick={() => setVisibleTab(item.id)}
       className={`cursor-pointer p-3 hover:bg-gray-700/20 font-semibold flex justify-center items-center text-lg ${
         visibleTab === item.id
-          ? "border-b-2 border-indigo-400 text-indigo-400  "
+          ? "border-b-2 border-blue-400 text-blue-400  "
           : ""
       }`}
     >

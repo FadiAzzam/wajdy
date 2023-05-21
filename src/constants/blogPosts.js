@@ -5,6 +5,44 @@ import { FaPager } from "react-icons/fa";
 import { GrVulnerability } from "react-icons/gr";
 import { AiOutlineFullscreen } from "react-icons/ai";
 
+// function importAllImages() {
+//   let images = {};
+//   const requireContext = require.context(
+//     "../assets/imgs/projects",
+//     false,
+//     /\.(png|jpe?g|svg)$/
+//   );
+//   requireContext.keys().forEach((imageName) => {
+//     const imageKey = imageName.replace("./", "");
+//     images[imageKey] =
+//       requireContext(imageName).default || requireContext(imageName);
+//   });
+//   return images;
+// }
+
+function importAllImages() {
+  let images = [];
+  const requireContext = require.context(
+    "../assets/imgs/projects",
+    false,
+    /\.(png|jpe?g|svg)$/
+  );
+  requireContext.keys().forEach((imageName) => {
+    const imageKey = imageName.replace("./", "");
+    const image =
+      requireContext(imageName).default || requireContext(imageName);
+    images.push({ key: imageKey, src: image });
+  });
+
+  // Sort the images alphabetically by key
+  images.sort((a, b) => a.key.localeCompare(b.key));
+
+  return images;
+}
+
+export const images = importAllImages();
+console.log(images);
+
 const imgs = [
   "https://picsum.photos/id/135/600/300",
   "https://picsum.photos/id/135/600/300",
@@ -22,7 +60,7 @@ const blogPosts = [
     categoryIcon: <MdOutlineDesignServices />,
     date: "2023-03-26",
     author: "Wajdi Azzam",
-    image: "https://picsum.photos/id/135/600/600",
+    image: "epi",
     content: [
       <p className="my-6">
         Webdesign ist ein wichtiger Aspekt jeder Website, da es dazu beiträgt,
