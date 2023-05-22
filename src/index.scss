@@ -39,6 +39,10 @@
 }
 
 @layer utilities {
+  .max-w-25 {
+    max-width: 25%;
+  }
+
   .word-break-word {
     word-break: break-word;
   }
@@ -46,9 +50,9 @@
   .word-wrap-break {
     word-wrap: break-word;
   }
-}
 
-.break-inside {
-  -moz-column-break-inside: avoid;
-  break-inside: avoid;
+  .break-inside {
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+  }
 }

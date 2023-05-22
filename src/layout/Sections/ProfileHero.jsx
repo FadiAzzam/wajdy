@@ -5,13 +5,16 @@ import { GoLocation } from "react-icons/go";
 import { FcApproval } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
+import cover from "../../assets/imgs/cover.svg";
+
 const ProfileHero = () => {
   return (
     <div>
-      <div className="w-full bg-white bg-hero-cover bg-contain bg-no-repeat bg-center bg-origin-border h-72 flex justify-center items-center">
+      <div className="w-full bg-white flex justify-center items-center">
         {/* <h1 className="text-3xl md:text-5xl font-extrabold leading-none tracking-tight  uppercase">
           Product & UI designer
         </h1> */}
+        <img className="md:max-w-25 p-20 md:p-3" src={cover} alt="Your SVG" />
       </div>
       <div className="container">
         <div className="flex items-center gap-3 flex-col md:flex-row">

@@ -18,9 +18,12 @@ export default function Tabs({ data }) {
   ));
 
   const listContent = data.map((item) => (
-    <p key={item.id} style={visibleTab === item.id ? {} : { display: "none" }}>
+    <div
+      key={item.id}
+      style={visibleTab === item.id ? {} : { display: "none" }}
+    >
       {item.tabContent}
-    </p>
+    </div>
   ));
 
   return (

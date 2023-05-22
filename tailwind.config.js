@@ -29,7 +29,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "hero-cover": "url('/src/assets/imgs/Logo cover pic copy.png')",
+        "hero-cover": "url('/src/assets/imgs/cover.svg')",
       },
       colors: {
         lightBlue: "#ccd6f6",

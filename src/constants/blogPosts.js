@@ -41,7 +41,6 @@ function importAllImages() {
 }
 
 export const images = importAllImages();
-console.log(images);
 
 const imgs = [
   "https://picsum.photos/id/135/600/300",
